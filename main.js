@@ -49,4 +49,38 @@ cards.forEach (card => {
 }
  getPeople();
 
- 
+ const perForm = document.querySelector('#perForm');
+
+ perForm.addEventListener('submit', (event) => {
+     event.preventDefault();
+
+     const formData = new formData(perForm);
+     let perObj = new Object();
+
+     for (let pair of formData.entries()) {
+         console.log(pair)
+
+         perObj[pair[0]] = pair[1]
+     }
+
+   
+
+   const parentDiv = document.createElement('div');
+   parentDiv.className('scene');
+
+   const innerDiv = document.createElement('div');
+   innerDiv.className('card');
+
+   const frontDiv = document.createElement('div');
+   frontDiv.className('card_face card_face--front');
+
+   const backDiv = document.createElement('div');
+   backDiv.className('card_face card_face--back');
+
+    
+   innerDiv.appendChild(frontDiv, backDiv);
+   parentDiv.appendChild(innerDiv);
+   
+   container.innerHTML = parentDiv;
+ })
+
