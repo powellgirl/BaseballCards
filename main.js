@@ -81,6 +81,6 @@ cards.forEach (card => {
    innerDiv.appendChild(frontDiv, backDiv);
    parentDiv.appendChild(innerDiv);
    
-   container.innerHTML = parentDiv;
+   container.appendChild() = parentDiv;
  })
 
