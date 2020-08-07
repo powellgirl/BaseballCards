@@ -15,11 +15,21 @@ header {
 h1 {
   font-family: 'Playfair Display', serif;
   color:#ce202e;
+  padding: 10px 10px 10px 25px;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   color:#ce202e;
+  padding: 10px 10px 10px 25px;
+}
+
+.form-card {
+  font-family: 'Playfair Display', serif;
+  color:white;
+  padding: 10px 10px 10px 25px;
+  line-height: 30px;
+
 }
 
 #container {
