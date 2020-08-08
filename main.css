@@ -37,6 +37,10 @@ h2 {
   flex-wrap: wrap;
 }
 
+#button {
+color: #3cbfaf;
+}
+
 .scene {
     width: 200px;
     height: 260px;
